@@ -24,6 +24,25 @@ namespace StackAndQueue
             }
         }
 
+
+        public void Dequeue()
+        {
+
+            if (this.front == null)
+            {
+                Console.WriteLine("The Queue is empty");
+                return;
+            }
+            Node temp = this.front;
+            this.front = this.front.next;
+
+            if (this.front == null)
+            {
+                this.rear = null;
+            }
+
+            Console.WriteLine("Element deleted is {0}", temp.value);
+        }
         public void display()
         {
             int i = 1;
