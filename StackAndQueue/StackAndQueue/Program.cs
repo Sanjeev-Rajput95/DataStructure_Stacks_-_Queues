@@ -10,7 +10,16 @@
             stack.Push(70);
             stack.Push(30);
             stack.Push(56);
+            Console.WriteLine("-----------------");
+            stack.peak();
             stack.Display();
+            Console.WriteLine("-----------------");
+            stack.pop();
+            Console.WriteLine("-----------------");
+            stack.peak();
+            stack.Display();
+            
+
         }
     }
 }
